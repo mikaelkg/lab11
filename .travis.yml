@@ -1,5 +1,5 @@
 language: cpp
-services:
-  - docker
-script:
-  - docker build -t logger .
+
+script:   
+- cmake -H. -B_build
+- cmake --build _build
